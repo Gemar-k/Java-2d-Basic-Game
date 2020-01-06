@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Tile
+comment1.params=id\ x\ y\ image
+comment1.target=Tile(int,\ int,\ int,\ java.awt.image.BufferedImage)
+comment2.params=
+comment2.target=int\ getId()
+comment3.params=image
+comment3.target=void\ setImage(java.awt.image.BufferedImage)
+comment4.params=
+comment4.target=java.awt.image.BufferedImage\ getImage()
+comment5.params=
+comment5.target=boolean\ isWalkable()
+comment6.params=
+comment6.target=int\ getWorldId()
+comment7.params=graphics
+comment7.target=void\ draw(java.awt.Graphics)
+numComments=8

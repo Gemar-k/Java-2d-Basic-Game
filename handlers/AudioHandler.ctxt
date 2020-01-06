@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=AudioHandler
+comment1.params=src
+comment1.target=AudioHandler(java.lang.String)
+comment2.params=
+comment2.target=void\ play()
+comment3.params=
+comment3.target=void\ stop()
+comment4.params=
+comment4.target=void\ pause()
+comment5.params=
+comment5.target=void\ loop()
+comment6.params=
+comment6.target=boolean\ isPlaying()
+comment7.params=src
+comment7.target=void\ createClip(java.lang.String)
+numComments=8

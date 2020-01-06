@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Display
+comment1.params=title
+comment1.target=Display(java.lang.String)
+comment2.params=panel
+comment2.target=void\ addPanel(DisplayPanel)
+comment3.params=
+comment3.target=javax.swing.JFrame\ getJFrame()
+comment4.params=
+comment4.target=int\ getDisplayWidth()
+comment5.params=visibility
+comment5.target=void\ DisplayVisible(boolean)
+numComments=6

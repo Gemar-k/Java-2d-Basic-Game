@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=LongGrassTile
+comment1.params=id\ x\ y\ image
+comment1.target=LongGrassTile(int,\ int,\ int,\ java.awt.image.BufferedImage)
+comment2.params=
+comment2.target=boolean\ isWalkable()
+numComments=3
