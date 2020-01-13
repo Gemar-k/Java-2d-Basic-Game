@@ -1,12 +1,12 @@
 package models;
 import java.awt.Graphics;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 
 public class PortalTile extends Tile{
     
     private int world;
     
-    public PortalTile(int id, int x, int y, BufferedImage image, int worldId){
+    public PortalTile(int id, int x, int y, Image image, int worldId){
         super(id, x, y, image);
         this.world = worldId;
     }

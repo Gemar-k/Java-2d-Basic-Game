@@ -20,6 +20,10 @@ public class World{
         this.backgroundMusic = audio;
     }
     
+    public AudioHandler getBackgroundMusic(){
+        return this.backgroundMusic;
+    }
+    
     public Player getPlayer(){
         return this.player;
     }

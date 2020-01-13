@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=PortalTile
 comment1.params=id\ x\ y\ image\ worldId
-comment1.target=PortalTile(int,\ int,\ int,\ java.awt.image.BufferedImage,\ int)
+comment1.target=PortalTile(int,\ int,\ int,\ java.awt.Image,\ int)
 comment2.params=
 comment2.target=int\ getWorldId()
 numComments=3

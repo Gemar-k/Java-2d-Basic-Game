@@ -2,9 +2,11 @@ package handlers;
 
 import java.awt.image.BufferedImage;
 import java.awt.image.*;
+import java.awt.Image;
 import java.io.*;
 import java.net.URL;
 import javax.imageio.*;
+import javax.swing.ImageIcon;
 
 public class FileHandler{
 
@@ -17,6 +19,18 @@ public class FileHandler{
             System.out.println("Error with getting image: " + e);
         }
 
+        return image;
+    }
+    
+    public static Image getAnimatedImage(String src){
+        Image image = null;
+        
+        try{
+            image = new ImageIcon(src).getImage();
+        }catch(Exception e){
+            System.out.println("Error with getting animated image: " + e);
+        }
+        
         return image;
     }
 

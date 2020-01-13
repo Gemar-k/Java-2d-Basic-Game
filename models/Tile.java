@@ -1,31 +1,40 @@
 package models;
 import interfaces.TileInterface;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 
 public class Tile implements TileInterface{
     private int id;
-    private BufferedImage image;
+    private Image image;
     
     private int x;
     private int y;
 
-    public Tile(int id, int x, int y, BufferedImage image){
+    public Tile(int id, int x, int y, Image image){
         this.id = id;
         this.image = image;
         this.x = x;
         this.y = y;
+    }
+    
+    public int getX(){
+        return this.x;
+    }
+    
+    public int getY(){
+        return this.y;
     }
 
     public int getId(){
         return this.id;
     }
 
-    public void setImage(BufferedImage image){
+    public void setImage(Image image){
         this.image = image;
     }
 
-    public BufferedImage getImage(){
+    public Image getImage(){
         return this.image;
     }
 

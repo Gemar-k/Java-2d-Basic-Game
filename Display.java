@@ -18,7 +18,7 @@ public class Display{
         jframe.setLayout(new GridLayout(1, 1));
     }
     
-    public void addPanel(DisplayPanel panel){
+    public void addPanel(JPanel panel){
         jframe.add(panel);
     }
     

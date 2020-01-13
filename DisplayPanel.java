@@ -23,7 +23,6 @@ public class DisplayPanel extends JPanel{
         this.input = input;
         this.worlds = worlds;
         this.currentWorld = worlds[0];
-        
     }
     
     //draw the world to the screen
@@ -61,8 +60,17 @@ public class DisplayPanel extends JPanel{
             }
             
             if(this.input.pressedKey[70]){
-                System.out.println("World id: " + this.currentWorld.getTile(player.getX(), player.getY()).getWorldId());
-                this.currentWorld = this.worlds[this.currentWorld.getTile(player.getX(), player.getY()).getWorldId()];
+                this.currentWorld.getBackgroundMusic().pause();
+                int newWorld = this.currentWorld.getTile(player.getX(), player.getY()).getWorldId();
+                System.out.println("World id: " + newWorld);
+                
+                try{
+                    Thread.sleep(400);
+                }catch(Exception e){
+                    System.out.println("Just a test thread stop");
+                }
+                
+                this.currentWorld = this.worlds[newWorld];
             }
             
             this.repaint();

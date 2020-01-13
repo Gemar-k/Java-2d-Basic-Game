@@ -1,15 +1,16 @@
 package interfaces;
 import models.World;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 
 public interface TileInterface
 {
    //image of the tile
-   public BufferedImage getImage();
+   public Image getImage();
    
    //setting the image
-   public void setImage(BufferedImage image);
+   public void setImage(Image image);
    
    //get id of the tile
    public int getId();
