@@ -1,14 +1,6 @@
-import models.*;
-import java.util.ArrayList;
-import handlers.FileHandler;
-import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.GridLayout;
-import java.awt.image.BufferedImage;
 
-import javax.swing.*;
-
-public class MenuDisplayPanel extends JPanel{
+public class MenuDisplayPanel extends DisplayPanel{
     
     
     public MenuDisplayPanel(){

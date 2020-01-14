@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=DisplayPanel
-comment1.params=input\ worlds
-comment1.target=DisplayPanel(KeyboardInput,\ models.World[])
+comment1.params=
+comment1.target=DisplayPanel()
 comment2.params=graphics
 comment2.target=void\ paintComponent(java.awt.Graphics)
 comment3.params=
