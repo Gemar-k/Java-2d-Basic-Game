@@ -1,30 +1,34 @@
-import models.*;
-import java.util.ArrayList;
-import handlers.FileHandler;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.GridLayout;
-import java.awt.image.BufferedImage;
+import java.awt.event.*; 
+import java.awt.*; 
+import javax.swing.*;
 
 public class GamePanel extends DisplayPanel{
+    private FsmManager fsm;
     
-    private World world;
+    private KeyboardInput input;
     
-    public GamePanel(World world){
-        this.world = world;
+    public GamePanel(FsmManager fsm, KeyboardInput input){
+        this.fsm = fsm;
+        this.input = input;
     }
     
     @Override
-    public void paintComponent(Graphics graphics){
-        this.world.draw(graphics);
+    protected void paintComponent(Graphics graphics){
+        this.fsm.draw(graphics);
     }
     
-    public void setWorld(World world){
-        this.world = world;
+    protected void keyPressed(KeyboardInput input){
+        this.fsm.keyPressed(input);
     }
     
-    public World getWorld(){
-        return this.world;
+    protected void move(){
+        this.fsm.run();
     }
-        
+    
+    public void run(){
+        this.keyPressed(this.input);
+        this.move();
+        this.repaint();
+    }
+    
 }

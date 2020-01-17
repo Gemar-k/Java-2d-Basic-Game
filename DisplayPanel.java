@@ -16,7 +16,7 @@ public abstract class DisplayPanel extends JPanel{
     
     //draw the world to the screen
     @Override
-    public void paintComponent(Graphics graphics){
+    protected void paintComponent(Graphics graphics){
         //paint displaypanel
     }
     

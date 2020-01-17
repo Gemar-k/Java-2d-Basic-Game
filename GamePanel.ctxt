@@ -1,11 +1,13 @@
 #BlueJ class context
 comment0.target=GamePanel
-comment1.params=world
-comment1.target=GamePanel(models.World)
+comment1.params=fsm\ input
+comment1.target=GamePanel(FsmManager,\ KeyboardInput)
 comment2.params=graphics
 comment2.target=void\ paintComponent(java.awt.Graphics)
-comment3.params=world
-comment3.target=void\ setWorld(models.World)
+comment3.params=input
+comment3.target=void\ keyPressed(KeyboardInput)
 comment4.params=
-comment4.target=models.World\ getWorld()
-numComments=5
+comment4.target=void\ move()
+comment5.params=
+comment5.target=void\ run()
+numComments=6

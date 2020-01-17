@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=GameState
+comment1.params=fsm
+comment1.target=GameState(FsmManager)
+comment2.params=
+comment2.target=void\ init()
+comment3.params=
+comment3.target=void\ run()
+comment4.params=graphics
+comment4.target=void\ draw(java.awt.Graphics)
+comment5.params=input
+comment5.target=void\ keyPressed(KeyboardInput)
+numComments=6

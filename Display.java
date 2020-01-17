@@ -15,7 +15,7 @@ public class Display{
         jframe.setSize(this.displayWidth, this.displayWidth);
         jframe.setResizable(false);
         jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jframe.setLayout(new GridLayout(1, 1));
+        jframe.setLayout(new GridLayout(1,1));
     }
     
     public void addPanel(JPanel panel){
