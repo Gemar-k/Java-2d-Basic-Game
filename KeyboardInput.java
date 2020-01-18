@@ -1,5 +1,6 @@
 import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
+import constants.Keys;
 
 public class KeyboardInput implements KeyListener{
     public boolean[] pressedKey;
@@ -21,5 +22,9 @@ public class KeyboardInput implements KeyListener{
     @Override
     public void keyReleased(KeyEvent e) {
         this.pressedKey[e.getKeyCode()] = false;
+    }
+    
+    public boolean getKey(Keys key){
+        return this.pressedKey[key.getValue()];
     }
 }

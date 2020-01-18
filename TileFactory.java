@@ -28,7 +28,10 @@ public class TileFactory{
                 
                 case 4: tile = new Tile(4, x, y, FileHandler.getImage("res/tiles/dirt_road.png"));
                 break;
-
+                
+                case 5: tile = new EndTile(5, x, y, FileHandler.getAnimatedImage("res/tiles/bonfire_road.png"));
+                break;
+                
                 default: tile = new Tile(404, x, y, FileHandler.getImage("res/tiles/test.png"));
             }
         }

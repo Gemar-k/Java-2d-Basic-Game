@@ -10,6 +10,4 @@ comment4.params=input
 comment4.target=void\ keyPressed(KeyboardInput)
 comment5.params=graphics
 comment5.target=void\ draw(java.awt.Graphics)
-comment6.params=time
-comment6.target=void\ delay(long)
-numComments=7
+numComments=6

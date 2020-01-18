@@ -41,6 +41,10 @@ public class Tile implements TileInterface{
     public boolean isWalkable(){
         return true;
     }
+    
+    public boolean isEnd(){
+        return false;
+    }
 
     public int getWorldId(){
         return 0;

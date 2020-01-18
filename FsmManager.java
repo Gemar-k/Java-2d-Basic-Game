@@ -1,4 +1,5 @@
 import java.awt.Graphics;
+import constants.States;
 
 public class FsmManager{
     
@@ -9,11 +10,11 @@ public class FsmManager{
     public FsmManager(){        
         this.states = new State[]{new MenuState(this), new GameState(this), new FinishedState(this)};
         
-        this.currentState = this.states[0];
+        this.currentState = this.states[States.MENU.getvalue()];
     }
     
-    public void setState(int state){
-        this.currentState = this.states[state];
+    public void setState(States state){
+        this.currentState = this.states[state.getvalue()];
         this.currentState.onStateChange();
     }
     

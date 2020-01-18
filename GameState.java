@@ -1,5 +1,6 @@
 import models.*;
 import handlers.*;
+import constants.*;
 import java.awt.*;
 import java.awt.Graphics; 
 
@@ -49,52 +50,48 @@ public class GameState extends State{
         //get player from current world
         Player player = this.currentWorld.getPlayer();
         //if pressed update player position and image
-        if(input.pressedKey[38]){
+        if(input.getKey(Keys.UP)){
                 if(this.currentWorld.getTile(player.getX(), player.getY() + -10).isWalkable()){
                     player.moveY(-10);
                     player.setImage(FileHandler.getImage("res/tiles/player/player_back.png"));
                 }
                 //System.out.println(this.world.getTile(player.getX(), player.getY()).getWorldId());
-            }else if(input.pressedKey[39]){
+            }else if(input.getKey(Keys.RIGHT)){
                 if(this.currentWorld.getTile(player.getX() + 10, player.getY()).isWalkable()){
                     player.moveX(10);
                     player.setImage(FileHandler.getImage("res/tiles/player/player_right.png"));
                 }
-            }else if(input.pressedKey[40]){
+            }else if(input.getKey(Keys.DOWN)){
                 if(this.currentWorld.getTile(player.getX(), player.getY() + 10).isWalkable()){
                     player.moveY(10);
                     player.setImage(FileHandler.getImage("res/tiles/player/player_front.png"));
                 }    
-            }else if(input.pressedKey[37]){
+            }else if(input.getKey(Keys.LEFT)){
                 if(this.currentWorld.getTile(player.getX() + -10, player.getY()).isWalkable()){
                     player.moveX(-10);
                     player.setImage(FileHandler.getImage("res/tiles/player/player_left.png"));
                 }
             }
             
-            if(input.pressedKey[70]){
+            if(this.currentWorld.getTile(player.getX(), player.getY()).isEnd()){
+                this.fsm.setState(States.FINISHED);
+            }
+            
+            if(input.getKey(Keys.F)){
                 currentWorld.getBackgroundMusic().pause();
                 int newWorld = currentWorld.getTile(player.getX(), player.getY()).getWorldId();
                 System.out.println("World id: " + newWorld);
                 
-                try{
-                    Thread.sleep(400);
-                }catch(Exception e){
-                    System.out.println("Just a test thread stop");
-                }
+                Game.delay(400);
                 
                 this.currentWorld = this.worlds[newWorld];
             }
             
-            if(input.pressedKey[27]){
-                this.fsm.setState(0);
+            if(input.getKey(Keys.ESC)){
+                this.fsm.setState(States.MENU);
                 this.currentWorld.getBackgroundMusic().pause();
                 
-                try{
-                    Thread.sleep(400);
-                }catch(Exception e){
-                    System.out.println("Just a test thread stop");
-                }
+                Game.delay(400);
             }
     }
 }

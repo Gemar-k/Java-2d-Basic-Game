@@ -27,15 +27,15 @@ public class MenuState extends State{
     
     @Override
     public void keyPressed(KeyboardInput input){
-        if(input.pressedKey[27]){
-            this.fsm.setState(1);
+        if(input.getKey(Keys.ESC)){
+            this.fsm.setState(States.GAME);
             
-            this.delay(400);
+            Game.delay(400);
         }
         
-        if(input.pressedKey[10]){
+        if(input.getKey(Keys.ENTER)){
             switch(this.currentOption){
-                case 0: this.fsm.setState(1);
+                case 0: this.fsm.setState(States.GAME);
                 break;
                 
                 case 1: //dialog box open
@@ -46,14 +46,14 @@ public class MenuState extends State{
             }
         }
         
-        if(input.pressedKey[40] && this.currentOption < this.options.length){
+        if(input.getKey(Keys.DOWN) && this.currentOption < this.options.length){
             this.currentOption++;
-            this.delay(400);
+            Game.delay(400);
         }
         
-        if(input.pressedKey[38] && this.currentOption > 0){
+        if(input.getKey(Keys.UP) && this.currentOption > 0){
             this.currentOption--;
-            this.delay(400);
+            Game.delay(400);
         }
     }
     
@@ -77,12 +77,4 @@ public class MenuState extends State{
         }
     }
     
-    
-    public void delay(long time){
-        try{
-            Thread.sleep(time);
-        }catch(Exception e){
-            System.out.println("Time could not be slowed down!");
-        }
-    }
 }

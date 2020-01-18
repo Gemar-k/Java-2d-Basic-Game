@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=EndTile
+comment1.params=id\ x\ y\ image
+comment1.target=EndTile(int,\ int,\ int,\ java.awt.Image)
+comment2.params=
+comment2.target=boolean\ isEnd()
+numComments=3

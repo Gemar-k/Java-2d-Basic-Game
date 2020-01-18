@@ -8,8 +8,6 @@ public class Game{
 
     private Display display;
     
-    private JPanel displayPanel;
-    
     private KeyboardInput input;
     
     private GamePanel gamePanel;
@@ -42,12 +40,16 @@ public class Game{
 
     public void run(){
         while(running){
-                this.gamePanel.run();
-            try{
-                Thread.sleep(40);
-            }catch(Exception e){
-                System.out.println("Error while running the game " + e);
-            }
+            this.gamePanel.run();
+            this.delay(40);
+        }
+    }
+    
+    public static void delay(long time){
+        try{
+            Thread.sleep(time);
+        }catch(Exception e){
+            System.out.println("Error while running the game " + e);
         }
     }
 }
