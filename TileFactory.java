@@ -1,8 +1,19 @@
 import models.*;
 import constants.DisplayValues;
 import handlers.FileHandler;
-
+/**
+ * class TileFactory - is used to create a new tile map
+ * @author (Gemar Koning)
+ * @version (3.0)
+ */
 public class TileFactory{
+    /**
+     * creates new tile by a tile id
+     * @param id  the id that defines which tile is to be used
+     * @param x  the x position on which the tile should be drawn on the screen
+     * @param y  the y position on which the tile should be drawn on the screen
+     * @return Tile object
+     */
     public static Tile createTile(String id, int x, int y){
         Tile tile;
 
@@ -39,6 +50,11 @@ public class TileFactory{
         return tile;
     }
     
+    /**
+     * creates a tile map by a tile id map
+     * @param tiles  a string map with tile id's
+     * @return 2D array tile map
+     */
     public static Tile[][] createTiles(String[] tiles){
         int rowCount = DisplayValues.ROWCOUNT.getValue();
         int tileWidth = DisplayValues.TILEWIDTH.getValue();

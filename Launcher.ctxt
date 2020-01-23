@@ -1,5 +1,7 @@
 #BlueJ class context
 comment0.target=Launcher
+comment0.text=\r\n\ class\ Launcher\ -\ launches\ the\ game\r\n\ \r\n\ @author\ (Gemar\ Koning)\r\n\ @version\ (1.0)\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Start\ a\ new\ Game\ Object\r\n\ @param\ args\ arguments\ for\ main\r\n
 numComments=2

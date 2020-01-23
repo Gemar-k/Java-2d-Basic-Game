@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=MenuState
+comment0.text=\r\n\ class\ MenuState\ -\ Extends\ state\ and\ defines\ the\ menu\ state\ of\ the\ game\r\n\ @author\ (Gemar\ Koning)\r\n\ @version\ (2.0)\r\n
 comment1.params=fsm
 comment1.target=MenuState(FsmManager)
+comment1.text=\r\n\ constructs\ MenuState\ object\r\n\ @param\ fsm\ \ the\ FsmManager\ object\r\n
 comment2.params=
 comment2.target=void\ init()
 comment3.params=

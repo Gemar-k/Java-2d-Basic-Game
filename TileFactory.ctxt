@@ -1,7 +1,10 @@
 #BlueJ class context
 comment0.target=TileFactory
+comment0.text=\r\n\ class\ TileFactory\ -\ is\ used\ to\ create\ a\ new\ tile\ map\r\n\ @author\ (Gemar\ Koning)\r\n\ @version\ (3.0)\r\n
 comment1.params=id\ x\ y
 comment1.target=models.Tile\ createTile(java.lang.String,\ int,\ int)
+comment1.text=\r\n\ creates\ new\ tile\ by\ a\ tile\ id\r\n\ @param\ id\ \ the\ id\ that\ defines\ which\ tile\ is\ to\ be\ used\r\n\ @param\ x\ \ the\ x\ position\ on\ which\ the\ tile\ should\ be\ drawn\ on\ the\ screen\r\n\ @param\ y\ \ the\ y\ position\ on\ which\ the\ tile\ should\ be\ drawn\ on\ the\ screen\r\n\ @return\ Tile\ object\r\n
 comment2.params=tiles
 comment2.target=models.Tile[][]\ createTiles(java.lang.String[])
+comment2.text=\r\n\ creates\ a\ tile\ map\ by\ a\ tile\ id\ map\r\n\ @param\ tiles\ \ a\ string\ map\ with\ tile\ id's\r\n\ @return\ 2D\ array\ tile\ map\r\n
 numComments=3

@@ -1,9 +1,17 @@
 import java.awt.*;
 import constants.*;
-
+/**
+ * class FinishedState - Extends state and defines the finished state of the game
+ * @author (Gemar Koning)
+ * @version (2.0)
+ */
 public class FinishedState extends State{
     private Font font;
     
+    /**
+     * constructs FinishedState object
+     * @param fsm  the FsmManager object
+     */
     public FinishedState(FsmManager fsm){
         super(fsm);
     }

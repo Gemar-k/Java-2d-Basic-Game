@@ -46,8 +46,8 @@ public class Tile implements TileInterface{
         return false;
     }
 
-    public int getWorldId(){
-        return 0;
+    public Integer getWorldId(){
+        return null;
     }
     
     public void draw(Graphics graphics){

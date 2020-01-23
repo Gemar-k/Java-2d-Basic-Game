@@ -19,7 +19,7 @@ public interface TileInterface
    public boolean isWalkable();
    
    //get new world from tile if possible
-   public int getWorldId();
+   public Integer getWorldId();
    
    //draw new tile
    public void draw(Graphics graphics);

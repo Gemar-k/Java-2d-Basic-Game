@@ -4,6 +4,11 @@ import constants.*;
 import java.awt.*;
 import java.awt.Graphics; 
 
+/**
+ * class GameState - Extends state and defines the game state of the game
+ * @author (Gemar Koning)
+ * @version (2.0)
+ */
 public class GameState extends State{
 
     private World[] worlds;
@@ -12,6 +17,10 @@ public class GameState extends State{
 
     private Player player;
     
+    /**
+     * constructs GameState object
+     * @param fsm  the FsmManager object
+     */
     public GameState(FsmManager fsm){
         super(fsm);
     }
@@ -74,17 +83,19 @@ public class GameState extends State{
             }
             
             if(this.currentWorld.getTile(player.getX(), player.getY()).isEnd()){
+                this.currentWorld.getBackgroundMusic().stop();
                 this.fsm.setState(States.FINISHED);
             }
             
             if(input.getKey(Keys.F)){
-                currentWorld.getBackgroundMusic().pause();
-                int newWorld = currentWorld.getTile(player.getX(), player.getY()).getWorldId();
-                System.out.println("World id: " + newWorld);
+                Integer newWorld = this.currentWorld.getTile(player.getX(), player.getY()).getWorldId();
                 
-                Game.delay(400);
                 
-                this.currentWorld = this.worlds[newWorld];
+                if(newWorld != null){
+                    Game.delay(400);
+                    currentWorld.getBackgroundMusic().pause();
+                    this.currentWorld = this.worlds[newWorld];
+                }
             }
             
             if(input.getKey(Keys.ESC)){

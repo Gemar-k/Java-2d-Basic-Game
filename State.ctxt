@@ -1,15 +1,22 @@
 #BlueJ class context
 comment0.target=State
+comment0.text=\r\n\ class\ State\ -\ defines\ the\ basic\ structure\ of\ a\ state\ in\ the\ game\ (Cannot\ be\ initialised\ only\ extended)\r\n\ @author\ (Gemar\ Koning)\r\n\ @version\ (2.2)\r\n
 comment1.params=fsm
 comment1.target=State(FsmManager)
+comment1.text=\r\n\ constructs\ State\ \r\n\ @param\ fsm\ \ the\ FsmManager\ object\r\n
 comment2.params=
 comment2.target=void\ init()
+comment2.text=\r\n\ is\ called\ in\ constructor\ and\ runs\ only\ once,\ when\ FsmManager\ object\ is\ created\r\n
 comment3.params=
 comment3.target=void\ onStateChange()
+comment3.text=\r\n\ runs\ only\ once,\ when\ state\ is\ the\ new\ current\ state\r\n
 comment4.params=graphics
 comment4.target=void\ draw(java.awt.Graphics)
+comment4.text=\r\n\ runs\ continuously\ in\ GamePanel\ is\ used\ to\ draw\ graphics\ to\ the\ screen\r\n\ @param\ graphics\ \ graphics\ object\ that\ can\ be\ used\ to\ draw\ to\ the\ screen\r\n
 comment5.params=input
 comment5.target=void\ keyPressed(KeyboardInput)
+comment5.text=\r\n\ \ runs\ continuously\ in\ GamePanel\ is\ used\ to\ catch\ user\ keyboard\ input\r\n\ \ @param\ input\ \ KeyboardInput\ object\ that\ can\ be\ used\ to\ catch\ user\ keyboard\ input\r\n
 comment6.params=
 comment6.target=void\ run()
+comment6.text=\r\n\ runs\ continuously\ in\ GamePanel\ is\ used\ to\ run\ code\ in\ background\ (like\:\ enemies,\ actors,\ etc)\r\n
 numComments=7

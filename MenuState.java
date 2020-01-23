@@ -2,12 +2,21 @@ import java.awt.*;
 import handlers.*;
 import constants.*;
 
+/**
+ * class MenuState - Extends state and defines the menu state of the game
+ * @author (Gemar Koning)
+ * @version (2.0)
+ */
 public class MenuState extends State{
     
     private String[] options;
     private int currentOption;
     private Font font;
     
+    /**
+     * constructs MenuState object
+     * @param fsm  the FsmManager object
+     */
     public MenuState(FsmManager fsm){
         super(fsm);
     }

@@ -1,15 +1,22 @@
 #BlueJ class context
 comment0.target=FsmManager
+comment0.text=\r\n\ class\ FsmManager\ -\ for\ controlling\ game\ state\r\n\ @author\ (Gemar\ Koning)\r\n\ @version\ (2.0)\r\n
 comment1.params=
 comment1.target=FsmManager()
+comment1.text=\r\n\ construct\ new\ fsm\ Object,\ construct\ new\ states\ and\ set\ the\ first\ current\ state\r\n
 comment2.params=state
 comment2.target=void\ setState(constants.States)
+comment2.text=\r\n\ sets\ the\ current\ state\ that\ is\ to\ be\ used\r\n\ @param\ state\ \ state\ enum\ that\ defines\ the\ new\ current\ state\ (like\:\ States.MENU,\ States.GAME,\ etc)\r\n
 comment3.params=
 comment3.target=State\ getState()
+comment3.text=\r\n\ \ get\ the\ current\ set\ state\r\n
 comment4.params=graphics
 comment4.target=void\ draw(java.awt.Graphics)
+comment4.text=\r\n\ draw\ the\ current\ state\ to\ the\ screen\r\n\ @param\ graphics\ \ graphics\ object\ that\ can\ be\ used\ to\ draw\ on\ the\ screen\r\n
 comment5.params=input
 comment5.target=void\ keyPressed(KeyboardInput)
+comment5.text=\r\n\ catch\ user\ keyboard\ input\ and\ run\ the\ current\ state\ keyPressed\ method\r\n
 comment6.params=
 comment6.target=void\ run()
+comment6.text=\r\n\ run\ the\ current\ state\r\n
 numComments=7

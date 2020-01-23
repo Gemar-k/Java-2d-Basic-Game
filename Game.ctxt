@@ -1,11 +1,19 @@
 #BlueJ class context
 comment0.target=Game
+comment0.text=\r\n\ \ class\ Game\ -\ the\ main\ class\ that\ houses\ the\ gameloop\ and\ initializes\ all\ game\ components\r\n\ \ @author\ (Gemar\ Koning)\r\n\ \ @version\ (2.0)\r\n
 comment1.params=
 comment1.target=Game()
+comment1.text=\r\n\ construct\ game\ class\ and\ call\ init()\ method\r\n
 comment2.params=
 comment2.target=void\ init()
+comment2.text=\r\n\ initialize\ all\ parameters\ and\ game\ components\r\n
 comment3.params=
 comment3.target=void\ run()
-comment4.params=time
-comment4.target=void\ delay(long)
-numComments=5
+comment3.text=\r\n\ runs\ the\ game\ and\ houses\ the\ main\ loop\r\n
+comment4.params=
+comment4.target=long\ elapsedTime()
+comment4.text=\r\n\ checks\ how\ much\ time\ has\ elapsed\ since\ game\ started\r\n
+comment5.params=time
+comment5.target=void\ delay(long)
+comment5.text=\r\n\ delay\ the\ complete\ game\r\n\ \r\n\ @param\ time\ \ defines\ how\ much\ the\ game\ needs\ to\ wait\ in\ millis\r\n
+numComments=6

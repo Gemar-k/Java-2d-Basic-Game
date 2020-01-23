@@ -19,5 +19,5 @@ comment7.target=boolean\ isWalkable()
 comment8.params=
 comment8.target=boolean\ isEnd()
 comment9.params=
-comment9.target=int\ getWorldId()
+comment9.target=java.lang.Integer\ getWorldId()
 numComments=11

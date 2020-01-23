@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=FinishedState
+comment0.text=\r\n\ class\ FinishedState\ -\ Extends\ state\ and\ defines\ the\ finished\ state\ of\ the\ game\r\n\ @author\ (Gemar\ Koning)\r\n\ @version\ (2.0)\r\n
 comment1.params=fsm
 comment1.target=FinishedState(FsmManager)
+comment1.text=\r\n\ constructs\ FinishedState\ object\r\n\ @param\ fsm\ \ the\ FsmManager\ object\r\n
 comment2.params=
 comment2.target=void\ init()
 comment3.params=graphics

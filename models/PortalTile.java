@@ -12,7 +12,7 @@ public class PortalTile extends Tile{
     }
     
     @Override
-    public int getWorldId(){
+    public Integer getWorldId(){
         return this.world;
     }
 }
